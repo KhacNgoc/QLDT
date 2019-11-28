@@ -44,12 +44,13 @@
         function myEdit() {
             document.getElementById("form").setAttribute('action', 'update.php');
         }
-        function eventEdit($idpr,$madt, $tendt, $gia, $hang) {
+        function eventEdit($idpr,$madt, $tendt, $tinhnang, $gia, $hang) {
             document.getElementById("idpr").setAttribute('value', $idpr);
             document.getElementById("id").setAttribute('value', $madt);
             document.getElementById("name").setAttribute('value', $tendt);
+            document.getElementById("utility").setAttribute('value', $tinhnang);
             document.getElementById("price").setAttribute('value', $gia);
-            document.getElementById("cat").setAttribute('value', $hang);
+            document.getElementById("cat").value = $hang;
         }
     </script>
     <?php
